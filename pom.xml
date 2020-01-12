@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>heart-beat</artifactId>
+    <packaging>pom</packaging>
+    <version>0.0.1.RELEASE</version>
+    <modules>
+        <module>heart-beat-test-ping</module>
+        <module>heart-beat-core</module>
+    </modules>
+
+    <parent>
+        <artifactId>java-dependency</artifactId>
+        <groupId>com.github.shoothzj</groupId>
+        <version>3.0.1.RELEASE</version>
+    </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.github.shoothzj</groupId>
+            <artifactId>java-tool</artifactId>
+            <version>3.0.3.RELEASE</version>
+        </dependency>
+    </dependencies>
+
+</project>
