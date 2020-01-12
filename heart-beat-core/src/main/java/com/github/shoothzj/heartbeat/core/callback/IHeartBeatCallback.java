@@ -1,4 +1,4 @@
-package com.github.shoothzj.heartbeat.core;
+package com.github.shoothzj.heartbeat.core.callback;
 
 /**
  * @author hezhangjian

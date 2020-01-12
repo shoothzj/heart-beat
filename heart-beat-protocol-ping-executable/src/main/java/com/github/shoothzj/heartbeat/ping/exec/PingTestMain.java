@@ -1,4 +1,4 @@
-package com.github.shoothzj.heartbeat.ping.test;
+package com.github.shoothzj.heartbeat.ping.exec;
 
 import lombok.extern.slf4j.Slf4j;
 

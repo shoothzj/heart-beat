@@ -9,7 +9,15 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>heart-beat-test-ping</artifactId>
+    <artifactId>heart-beat-protocol-ping-executable</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.github.shoothzj</groupId>
+            <artifactId>heart-beat-protocol-ping</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>
@@ -22,7 +30,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>com.github.shoothzj.heartbeat.ping.test.PingTestMain</mainClass>
+                            <mainClass>com.github.shoothzj.heartbeat.ping.exec.PingTestMain</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

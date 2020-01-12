@@ -8,8 +8,10 @@
     <packaging>pom</packaging>
     <version>0.0.1.RELEASE</version>
     <modules>
-        <module>heart-beat-test-ping</module>
         <module>heart-beat-core</module>
+        <module>heart-beat-protocol-ping</module>
+        <module>heart-beat-protocol-ping-executable</module>
+        <module>heart-beat-protocol-udp</module>
     </modules>
 
     <parent>

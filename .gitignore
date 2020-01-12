@@ -1,3 +1,13 @@
 # Project exclude paths
-/heart-beat-core/target/
-/heart-beat-test-ping/target/
+**.iml
+**.log
+.idea/**
+**/target
+**/.classpath
+**/.project
+
+# mqtt client java
+*.lck
+
+# file system
+.DS_Store
