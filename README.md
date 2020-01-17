@@ -1,4 +1,4 @@
-在云原生的现在,我们经常使用到的心跳例子就是k8s的liveness和readiness
+在现在,我们经常使用到的心跳例子就是k8s的liveness和readiness
 常见的配置文件:
 
 
