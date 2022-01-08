@@ -21,7 +21,8 @@ public class PingWorkTask implements Runnable {
     public PingWorkTask(PingTask pingTask, IPingCallback pingCallback) {
         this.pingTask = pingTask;
         this.pingCallback = pingCallback;
-        this.callbackWrapper = new CallbackWrapper<>(pingCallback, pingTask.getSuccessThreshold(), pingTask.getFailureThreshold());
+        this.callbackWrapper = new CallbackWrapper<>(pingCallback, pingTask.getSuccessThreshold(),
+                pingTask.getFailureThreshold());
     }
 
     @Override

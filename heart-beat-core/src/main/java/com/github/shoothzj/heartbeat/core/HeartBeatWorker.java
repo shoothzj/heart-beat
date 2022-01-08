@@ -14,7 +14,10 @@ public class HeartBeatWorker {
 
     private static final int CORE_SIZE = 5;
 
-    private static final ScheduledThreadPoolExecutor scheduleService = new ScheduledThreadPoolExecutor(CORE_SIZE, new DefaultThreadFactory("heart-worker"), new SimpleLogRejectedExecutionHandler());
+    private static final ScheduledThreadPoolExecutor scheduleService =
+            new ScheduledThreadPoolExecutor(CORE_SIZE,
+                    new DefaultThreadFactory("heart-worker"),
+                    new SimpleLogRejectedExecutionHandler());
 
     static {
         scheduleService.setRemoveOnCancelPolicy(true);

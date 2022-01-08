@@ -13,7 +13,8 @@ import java.lang.reflect.Method;
 @Slf4j
 public class ReflectionUtil {
 
-    public static void invokeStartTask(Class<?> clazz, AbstractHeartBeatImpl target, String taskId, AbstractHeartBeatTask task, Object callback) {
+    public static void invokeStartTask(Class<?> clazz, AbstractHeartBeatImpl target, String taskId,
+                                       AbstractHeartBeatTask task, Object callback) {
         Method taskMethod = getTaskMethod(clazz, HeartBeatConstant.START_TASK_METHOD);
         try {
             taskMethod.invoke(target, taskId, task, callback);
@@ -54,8 +55,8 @@ public class ReflectionUtil {
         try {
             result = clazz.getDeclaredMethods();
         } catch (Throwable ex) {
-            throw new IllegalStateException("Failed to introspect Class [" + clazz.getName() +
-                    "] from ClassLoader [" + clazz.getClassLoader() + "]", ex);
+            throw new IllegalStateException("Failed to introspect Class [" + clazz.getName()
+                    + "] from ClassLoader [" + clazz.getClassLoader() + "]", ex);
         }
         return result;
     }

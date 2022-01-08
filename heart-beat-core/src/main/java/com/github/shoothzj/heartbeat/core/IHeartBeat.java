@@ -13,7 +13,6 @@ public interface IHeartBeat {
      * @param taskId
      * @param heartBeatTask
      * @param heartBeatCallback
-     * @return
      */
     void startTask(String taskId, AbstractHeartBeatTask heartBeatTask, IHeartBeatCallback heartBeatCallback);
 
